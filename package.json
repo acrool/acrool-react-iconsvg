@@ -1,6 +1,6 @@
 {
   "name": "bear-react-iconsvg",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Most modern react styled-component icon by svg symbols",
   "keywords": [
     "react",
@@ -79,7 +79,7 @@
     "cz-conventional-changelog": "3.3.0",
     "cz-customizable": "6.3.0",
     "standard-version": "9.3.0",
-    "eslint-config-react-app":  "7.0.1",
+    "eslint-config-react-app": "7.0.1",
     "bear-react-grid": "^2.0.1"
   },
   "eslintConfig": {
