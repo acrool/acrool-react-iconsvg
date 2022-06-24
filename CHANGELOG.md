@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.2](https://github.com/imagine10255/bear-react-iconsvg/compare/v2.0.1...v2.0.2) (2022-06-24)
+
+
+### Bug Fixes
+
+* fix style type ([b2794da](https://github.com/imagine10255/bear-react-iconsvg/commit/b2794dabd9a622e513a267a8e891aaa698949b3b))
+
 ### 2.0.1 (2022-06-24)
 
 
