@@ -11,8 +11,6 @@ interface IProps extends IIconSvgProps, IIconSetting {}
 
 /**
  * IconSvg
- * https://github.com/Hiswe/gulp-svg-symbols
- * https://io-meter.com/img/posts/svg-icons.svg
  */
 const IconSvg = ({
     idPrefix = 'icon',

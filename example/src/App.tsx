@@ -1,7 +1,7 @@
 import React from 'react';
 import {GridThemeProvider} from 'bear-react-grid';
 
-import 'bear-react-iconsvg/dist/index.css';
+import 'bear-react-grid/dist/index.css';
 import Icon from './Icon';
 
 
@@ -39,7 +39,7 @@ function App() {
             <Icon code="apple" color="#000" size={30}/>
             <Icon code="android" color="green" size={30}/>
             <Icon code="arrow-alt-right" color="primary" size={30}/>
-            <Icon code="arrow-right" color="secondary" size={30}/>
+            <Icon code="arrow-right" color="secondary" size={40} sm={60} lg={10}/>
         </GridThemeProvider>
     );
 }

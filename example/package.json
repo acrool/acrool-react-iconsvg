@@ -16,7 +16,7 @@
     "@types/react-dom": "link:../node_modules/@types/react-dom",
     "@types/styled-components": "link:../node_modules/@types/styled-components",
     "bear-react-iconsvg": "link:..",
-    "bear-react-grid": "2.0.0",
+    "bear-react-grid": "link:../node_modules/bear-react-gird",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "link:../node_modules/react-scripts",

@@ -1,7 +1,7 @@
 {
   "name": "bear-react-iconsvg",
   "version": "2.0.0",
-  "description": "Most modern rwd grid system by react + styled-component",
+  "description": "Most modern react styled-component icon by svg symbols",
   "keywords": [
     "react",
     "typescript",
@@ -49,11 +49,11 @@
     "release:beta": "standard-version --prerelease beta"
   },
   "resolutions": {
-    "react-error-overlay": "6.0.9",
     "typescript": "4.7.4"
   },
   "peerDependencies": {
     "react": "^18.1.0",
+    "bear-react-grid": "^2.0.0",
     "eslint-config-react-app": "^7.0.1"
   },
   "dependencies": {
@@ -68,7 +68,6 @@
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
     "@types/styled-components": "5.1.25",
-    "bear-react-grid": "^2.0.0",
     "microbundle-crl": "^0.13.10",
     "babel-eslint": "^10.0.3",
     "cross-env": "^7.0.2",
@@ -80,7 +79,8 @@
     "cz-conventional-changelog": "3.3.0",
     "cz-customizable": "6.3.0",
     "standard-version": "9.3.0",
-    "eslint-config-react-app":  "7.0.1"
+    "eslint-config-react-app":  "7.0.1",
+    "bear-react-grid": "^2.0.1"
   },
   "eslintConfig": {
     "extends": [

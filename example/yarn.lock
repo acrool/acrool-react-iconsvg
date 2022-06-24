@@ -2831,12 +2831,9 @@ batch@0.6.1:
   resolved "https://registry.yarnpkg.com/batch/-/batch-0.6.1.tgz#dc34314f4e679318093fc760272525f94bf25c16"
   integrity sha512-x+VAiMRL6UPkx+kudNvxTl6hB2XNNCG2r+7wixVfIYwu/2HKRXimwQyaumLjMveWvT2Hkd/cAJw+QBMfJ/EKVw==
 
-bear-react-grid@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/bear-react-grid/-/bear-react-grid-2.0.0.tgz#1210a788ab46b83a7dc6381b650ad2cd55dc7e32"
-  integrity sha512-utt2HIla/rp3oMKL7b2lsxvrUp1jUBLuPS1WrhtH/b0wTG/HCI/v9I0jAu0LETcVuTNkd2tmeeR8UjV/d4/MGg==
-  dependencies:
-    styled-components "5.3.5"
+"bear-react-grid@link:../node_modules/bear-react-gird":
+  version "0.0.0"
+  uid ""
 
 "bear-react-iconsvg@link:..":
   version "0.0.0"
