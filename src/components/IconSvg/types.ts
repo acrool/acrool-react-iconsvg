@@ -1,3 +1,5 @@
+import CSS from 'csstype';
+
 type sizeUnit = 'px'|'%'|'em';
 type TUnitSize = `${number}${sizeUnit}`;
 
@@ -16,7 +18,7 @@ export interface IMediaSize {
 
 export interface IIconSvgRoot extends IMediaSize {
     className?: string,
-    style?: string,
+    style?: CSS.Properties,
     onClick?: () => void;
     color?: string|'primary'|'secondaryColor';
     hoverColor?: string|'primary'|'secondaryColor';
