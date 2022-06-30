@@ -32,7 +32,7 @@ export type TIconCode = unknown;
 
 
 export interface IIconSetting {
-    idPrefix: string,
+    idPrefix?: string,
     symbolsPath: string,
 }
 
