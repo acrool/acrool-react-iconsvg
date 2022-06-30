@@ -22,8 +22,8 @@ yarn add bear-react-iconsvg
 
 ## Usage
 
-you need bear-react-grid, use rwd size setting,
-add custom icon component in your project, copy `example/src/Icon.tsx` files.
+> you need bear-react-grid, use rwd size setting,
+  add custom icon component in your project, copy [IconComponent](./example/src/Icon.tsx) files.
 
 ```tsx
 <Icon code="apple" color="#000" size={30}/>
