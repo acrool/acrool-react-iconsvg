@@ -13,7 +13,7 @@ interface IProps extends IIconSvgProps, IIconSetting {}
  * IconSvg
  */
 const IconSvg = ({
-    idPrefix = 'icon',
+    idPrefix = 'icon_',
     symbolsPath = '',
     style,
     className,
@@ -31,7 +31,7 @@ const IconSvg = ({
     xl,
     xxl,
 }: IProps) => {
-    const iconCode = [idPrefix, code].join('-');
+    const iconCode = [idPrefix, code].join('');
 
     return <IconSvgRoot
         xmlns="http://www.w3.org/2000/svg"
