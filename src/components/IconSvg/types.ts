@@ -19,7 +19,7 @@ export interface IMediaSize {
 export interface IIconSvgRoot extends IMediaSize {
     className?: string,
     style?: CSS.Properties,
-    onClick?: () => void;
+    onClick?: (event: React.MouseEvent<HTMLElement>) => void;
     color?: string|'inherit'|'primary'|'secondaryColor';
     hoverColor?: string|'inherit'|'primary'|'secondaryColor';
     activeColor?: string|'inherit'|'primary'|'secondaryColor';
