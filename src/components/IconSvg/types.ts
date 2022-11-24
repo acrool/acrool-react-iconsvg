@@ -15,14 +15,15 @@ export interface IMediaSize {
     xxl?: TSize,
 }
 
+type TColor = string|'inherit'|'primary'|'secondary'|'contrast'|'danger'|'disabled';
 
 export interface IIconSvgRoot extends IMediaSize {
     className?: string,
     style?: CSS.Properties,
     onClick?: (event: React.MouseEvent<HTMLElement>) => void;
-    color?: string|'inherit'|'primary'|'secondaryColor';
-    hoverColor?: string|'inherit'|'primary'|'secondaryColor';
-    activeColor?: string|'inherit'|'primary'|'secondaryColor';
+    color?: TColor;
+    hoverColor?: TColor;
+    activeColor?: TColor;
     isRotateAnimation?: boolean;
     rotate?: number;
     size?: TSize;
