@@ -38,9 +38,10 @@ export const generateColor = (props: IColor) => {
  * @param colorName
  */
 export const getColor = (colorName?: string) => {
-    return colorName === 'primary' ? 'var(--primary-color)' :
-        colorName === 'secondary' ? 'var(--secondary-color)':
-            colorName;
+    if(colorName && ['primary', 'secondary','danger','contrast','disabled'].includes(colorName)){
+        return `var(--${colorName}-color)`;
+    }
+    return undefined;
 };
 
 /**

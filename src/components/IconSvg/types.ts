@@ -3,7 +3,7 @@ import CSS from 'csstype';
 type sizeUnit = 'px'|'%'|'em';
 type TUnitSize = `${number}${sizeUnit}`;
 
-export type TSize = number|TUnitSize;
+export type TSize = number|TUnitSize|'inherit';
 
 
 
@@ -15,14 +15,15 @@ export interface IMediaSize {
     xxl?: TSize,
 }
 
+type TColor = string|'inherit'|'primary'|'secondary'|'contrast'|'danger'|'disabled';
 
 export interface IIconSvgRoot extends IMediaSize {
     className?: string,
     style?: CSS.Properties,
-    onClick?: () => void;
-    color?: string|'primary'|'secondaryColor';
-    hoverColor?: string|'primary'|'secondaryColor';
-    activeColor?: string|'primary'|'secondaryColor';
+    onClick?: (event: React.MouseEvent<HTMLElement>) => void;
+    color?: TColor;
+    hoverColor?: TColor;
+    activeColor?: TColor;
     isRotateAnimation?: boolean;
     rotate?: number;
     size?: TSize;
