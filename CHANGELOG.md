@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/imagine10255/bear-react-iconsvg/compare/v2.1.0-alpha.1...v2.1.0) (2022-11-24)
+
+
+### Features
+
+* add danger color ([6824834](https://github.com/imagine10255/bear-react-iconsvg/commit/6824834661d7e888694b0fc1c8a7a388feb1ae18))
+
 ## [2.1.0-alpha.1](https://github.com/imagine10255/bear-react-iconsvg/compare/v2.1.0-alpha.0...v2.1.0-alpha.1) (2022-09-30)
 
 ## [2.1.0-alpha.0](https://github.com/imagine10255/bear-react-iconsvg/compare/v2.0.3...v2.1.0-alpha.0) (2022-09-29)
