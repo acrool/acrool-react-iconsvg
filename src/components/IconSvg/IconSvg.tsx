@@ -21,6 +21,7 @@ const IconSvg = ({
     color = '#bdbdbd',
     hoverColor,
     activeColor,
+    isActive,
     code,
     isRotateAnimation = false,
     rotate = 0,
@@ -43,6 +44,7 @@ const IconSvg = ({
         color={color}
         hoverColor={hoverColor}
         activeColor={activeColor}
+        isActive={isActive}
         size={unit(size)}
         sm={unit(sm)}
         md={unit(md)}

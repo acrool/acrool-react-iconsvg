@@ -17,13 +17,18 @@ export interface IMediaSize {
 
 type TColor = string|'inherit'|'primary'|'secondary'|'contrast'|'danger'|'disabled';
 
-export interface IIconSvgRoot extends IMediaSize {
+
+export interface IIconColor {
+    color: string,
+    activeColor?: string,
+    hoverColor?: string,
+    isActive?: boolean,
+}
+
+export interface IIconSvgRoot extends IMediaSize, IIconColor {
     className?: string,
     style?: CSS.Properties,
-    onClick?: (event: React.MouseEvent<HTMLElement>) => void;
-    color?: TColor;
-    hoverColor?: TColor;
-    activeColor?: TColor;
+    onClick?: (event: React.MouseEvent<Element>) => void;
     isRotateAnimation?: boolean;
     rotate?: number;
     size?: TSize;
