@@ -1,1 +1,0 @@
-declare type IconCode = 'android'|'apple'|'arrow-alt-right'|'arrow-right';

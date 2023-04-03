@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {css, keyframes} from 'styled-components/macro';
+import styled, {css, keyframes} from 'styled-components';
 import {generateColor, generateRWDStyled, unit} from './utils';
 import {IIconSetting, IIconSvgProps, IIconSvgRoot} from './types';
 
@@ -21,6 +21,7 @@ const IconSvg = ({
     color = '#bdbdbd',
     hoverColor,
     activeColor,
+    isActive,
     code,
     isRotateAnimation = false,
     rotate = 0,
@@ -43,6 +44,7 @@ const IconSvg = ({
         color={color}
         hoverColor={hoverColor}
         activeColor={activeColor}
+        isActive={isActive}
         size={unit(size)}
         sm={unit(sm)}
         md={unit(md)}

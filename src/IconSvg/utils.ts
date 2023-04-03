@@ -1,6 +1,6 @@
 import {media, mediaSizes, themeName} from 'bear-react-grid';
-import {css} from 'styled-components/macro';
-import {TSize} from './types';
+import {css} from 'styled-components';
+import {IIconColor, TSize} from './types';
 
 
 export const unit = (size?: TSize): TSize|undefined => {
@@ -10,18 +10,12 @@ export const unit = (size?: TSize): TSize|undefined => {
     return typeof size === 'number'? `${size}px`: size;
 };
 
-interface IColor {
-    color: string,
-    activeColor?: string,
-    hoverColor?: string,
-    isActive?: boolean,
-}
 
 /**
  * 產生 顏色樣式
  * @param props
  */
-export const generateColor = (props: IColor) => {
+export const generateColor = (props: IIconColor) => {
     return `
       color: ${getColor((props.isActive && props.activeColor) ? props.activeColor: props.color)};
        
