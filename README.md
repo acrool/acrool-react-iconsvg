@@ -1,18 +1,12 @@
 # bear-react-iconsvg
 
-> Most modern rwd grid system by react + styled-component
+> icon component by react + styled-component
 
 
 [![NPM](https://img.shields.io/npm/v/bear-react-iconsvg.svg)](https://www.npmjs.com/package/bear-react-iconsvg)
 [![npm](https://img.shields.io/npm/dm/bear-react-iconsvg.svg)](https://www.npmjs.com/package/bear-react-iconsvg)
 
 This project [demo](https://imagine10255.github.io/bear-react-iconsvg/)
-
-## Support Version Map
-
-React | Styled-component | React Scripts | Bear React Grid | 
-------|:-----------------|---------------|----------------:|
-18    | 5.3.5            | 5.0.1         |           2.0.0 |
 
 ## Install
 
@@ -22,8 +16,8 @@ yarn add bear-react-iconsvg
 
 ## Usage
 
-> you need bear-react-grid, use rwd size setting,
-  add custom icon component in your project, copy [IconComponent](./example/src/Icon.tsx) files.
+> you need bear-react-iconsvg, use rwd size setting,
+add custom icon component in your project, copy [IconComponent](./example/src/Icon.tsx) files.
 
 ```tsx
 <Icon code="apple" color="#000" size={30}/>

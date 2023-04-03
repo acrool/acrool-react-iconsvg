@@ -1,14 +1,15 @@
 import React from 'react';
 import IconSvg, {IIconSvgProps} from 'bear-react-iconsvg';
 import styled from 'styled-components';
+import {TIconCode} from './types';
 
 
-const idPrefix = 'icon';
-const path = 'static/plugins/iconsvg/index.svg';
+const idPrefix = 'icon_';
+// const path = asset(`/plugins/iconsvg/index.svg?v=${getAppVersion()}`);
 
 
 interface IProps extends IIconSvgProps {
-    code: IconCode,
+    code: TIconCode,
 }
 
 /**
@@ -19,13 +20,15 @@ const Icon = (props: IProps) => {
     return <ThemeIconSvg
         {...props}
         idPrefix={idPrefix}
-        symbolsPath={path}
+        symbolsPath=""
     />;
 };
 
 export default Icon;
 
+
+
 const ThemeIconSvg = styled(IconSvg)`
-  --primary-color: #00a3e0;
-  --secondary-color: #ed1164;
+  --primary-color: ${props => props.theme.primaryColor};
+  --secondary-color: ${props => props.theme.secondaryColor}
 `;

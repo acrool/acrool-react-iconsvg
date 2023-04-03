@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {css, keyframes} from 'styled-components/macro';
+import styled, {css, keyframes} from 'styled-components';
 import {generateColor, generateRWDStyled, unit} from './utils';
 import {IIconSetting, IIconSvgProps, IIconSvgRoot} from './types';
 
