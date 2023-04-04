@@ -19,7 +19,7 @@ type TColor = string|'inherit'|'primary'|'secondary'|'contrast'|'danger'|'disabl
 
 
 export interface IIconColor {
-    color: string,
+    color?: string,
     activeColor?: string,
     hoverColor?: string,
     isActive?: boolean,

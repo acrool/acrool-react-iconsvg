@@ -31,7 +31,7 @@ export default defineConfig({
         },
         cssTarget: 'chrome61',
         rollupOptions: {
-            external: ['react', 'react-dom'],
+            external: ['react', 'react-dom', 'styled-components', 'bear-react-grid'],
             output: {
                 globals: {
                     react: 'React',
