@@ -59,7 +59,7 @@ const rotateAnimine = keyframes`
 `;
 
 const IconSvgRoot = styled.svg<IIconSvgRoot>`
-  --svg-size: ${props => props.size}
+  --svg-size: ${props => props.size};
   
   position: relative;
   display: inline-flex;
