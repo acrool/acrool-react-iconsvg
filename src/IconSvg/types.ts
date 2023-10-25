@@ -6,26 +6,15 @@ type TUnitSize = `${number}${sizeUnit}`;
 export type TSize = number|TUnitSize|'inherit';
 
 
-
-export interface IMediaSize {
-    sm?: TSize,
-    md?: TSize,
-    lg?: TSize
-    xl?: TSize,
-    xxl?: TSize,
-}
-
 type TColor = string|'inherit'|'primary'|'secondary'|'contrast'|'danger'|'disabled';
-
-
 export interface IIconColor {
-    color?: string,
-    activeColor?: string,
-    hoverColor?: string,
+    color?: TColor,
+    activeColor?: TColor,
+    hoverColor?: TColor,
     isActive?: boolean,
 }
 
-export interface IIconSvgRoot extends IMediaSize, IIconColor {
+export interface IIconSvgRoot extends IIconColor {
     className?: string,
     style?: CSS.Properties,
     onClick?: (event: React.MouseEvent<Element>) => void;

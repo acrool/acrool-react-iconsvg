@@ -1,4 +1,3 @@
-import {media, mediaSizes, themeName} from 'bear-react-grid';
 import {css} from 'styled-components';
 import {IIconColor, TSize} from './types';
 
@@ -36,22 +35,4 @@ export const getColor = (colorName?: string) => {
         return `var(--${colorName}-color)`;
     }
     return undefined;
-};
-
-/**
- * 產生 RWD 樣式
- * @param props
- */
-export const generateRWDStyled = (props: any) => {
-    return mediaSizes
-        .map(sizeName => {
-            return media[sizeName]`
-            
-             ${typeof props[sizeName] !== 'undefined' && css`
-                  width: ${props[sizeName]};
-                  height: ${props[sizeName]};
-            `}
-           
-    `;
-        });
 };

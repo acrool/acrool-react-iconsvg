@@ -1,10 +1,10 @@
 import React from 'react';
 import styled, {css, keyframes} from 'styled-components';
-import {generateColor, generateRWDStyled, unit} from './utils';
+import {generateColor, unit} from './utils';
 import {IIconSetting, IIconSvgProps, IIconSvgRoot} from './types';
 
 
-interface IProps extends IIconSvgProps, IIconSetting {}
+export interface ISvgProps extends IIconSvgProps, IIconSetting {}
 
 
 
@@ -26,12 +26,7 @@ const IconSvg = ({
     isRotateAnimation = false,
     rotate = 0,
     size = 28,
-    sm,
-    md,
-    lg,
-    xl,
-    xxl,
-}: IProps) => {
+}: ISvgProps) => {
     const iconCode = [idPrefix, code].join('');
 
     return <IconSvgRoot
@@ -46,11 +41,6 @@ const IconSvg = ({
         activeColor={activeColor}
         isActive={isActive}
         size={unit(size)}
-        sm={unit(sm)}
-        md={unit(md)}
-        lg={unit(lg)}
-        xl={unit(xl)}
-        xxl={unit(xxl)}
     >
         <use xlinkHref={`${symbolsPath}#${iconCode}`}/>
     </IconSvgRoot>;
@@ -69,13 +59,15 @@ const rotateAnimine = keyframes`
 `;
 
 const IconSvgRoot = styled.svg<IIconSvgRoot>`
+  --svg-size: ${props => props.size}
+  
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  width: ${props => props.size};
-  height: ${props => props.size};
+  width: var(--svg-size);
+  height: var(--svg-size);
 
 
   vertical-align: middle;
@@ -86,10 +78,5 @@ const IconSvgRoot = styled.svg<IIconSvgRoot>`
   ${props =>  props.isRotateAnimation && css`
     animation: ${rotateAnimine} 1s linear infinite;
   `}
-
-  ${(props: any) => css`
-    ${generateColor(props)};
-    ${generateRWDStyled(props)};
-  `}
-
+  ${(props: IIconSvgRoot) => generateColor(props)}
 `;

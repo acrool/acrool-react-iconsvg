@@ -421,15 +421,6 @@ babel-plugin-syntax-jsx@^6.18.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
   integrity sha512-qrPaCSo9c8RHNRHIotaufGbuOBN8rtdC4QrrFFc43vyWCCz7Kl7GL1PGaXtMGQZUXrkCjNEgxDfmAuAabr/rlw==
 
-bear-react-grid@^3.x:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/bear-react-grid/-/bear-react-grid-3.0.2.tgz#dbf0420361f5cbb1027ece068bbeef8d6a62225d"
-  integrity sha512-SoptqSK94+EfWT8LKC9Ya8J/2IasZRS4PFm8dX1v+S5VOfAAKg3SQ/E1vEqd9rWGTKjgRVQZkkHDyPaLRpezUA==
-  dependencies:
-    react "^18.x"
-    react-dom "^18.x"
-    styled-components "^5.3.x"
-
 "bear-react-iconsvg@link:..":
   version "0.0.0"
   uid ""
