@@ -1,12 +1,17 @@
-# bear-react-iconsvg
+# Bear React IconSvg
 
-> icon component by react + styled-component
+<p align="center">
+   This is the element using svg symbol as icon in React
+</p>
 
+<div align="center">
 
-[![NPM](https://img.shields.io/npm/v/bear-react-iconsvg.svg)](https://www.npmjs.com/package/bear-react-iconsvg)
-[![npm](https://img.shields.io/npm/dm/bear-react-iconsvg.svg)](https://www.npmjs.com/package/bear-react-iconsvg)
+[![NPM](https://img.shields.io/npm/v/bear-react-iconsvg.svg?style=for-the-badge)](https://www.npmjs.com/package/bear-react-iconsvg)
+[![npm downloads](https://img.shields.io/npm/dm/bear-react-iconsvg.svg?style=for-the-badge)](https://www.npmjs.com/package/bear-react-iconsvg)
+[![npm](https://img.shields.io/npm/dt/bear-react-iconsvg.svg?style=for-the-badge)](https://www.npmjs.com/package/bear-react-iconsvg)
+[![npm](https://img.shields.io/npm/l/bear-react-iconsvg?style=for-the-badge)](https://github.com/imagine10255/bear-react-iconsvg/blob/main/LICENSE)
 
-This project [demo](https://imagine10255.github.io/bear-react-iconsvg/)
+</div>
 
 ## Install
 
@@ -30,8 +35,6 @@ add custom icon component in your project, copy [IconComponent](./example/src/Ic
 There is also a codesandbox template that you can fork and play with it:
 
 [![Edit react-editext-template](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/bear-react-iconsvg-lqsn6)
-
-[Component and setup docs](./docs/component.md)
 
 
 ## Tools
