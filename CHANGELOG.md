@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.1](https://github.com/imagine10255/bear-react-iconsvg/compare/v4.0.0...v4.0.1) (2024-01-20)
+
 ## [4.0.0](https://github.com/imagine10255/bear-react-iconsvg/compare/v4.0.0-alpha.1...v4.0.0) (2023-11-22)
 
 ## [4.0.0-alpha.1](https://github.com/imagine10255/bear-react-iconsvg/compare/v4.0.0-alpha.0...v4.0.0-alpha.1) (2023-10-25)
