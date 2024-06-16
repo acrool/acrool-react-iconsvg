@@ -1,5 +1,5 @@
 import React from 'react';
-import IconSvg, {IIconSvgProps} from 'bear-react-iconsvg';
+import IconSvg, {IIconSvgProps} from '@acrool/react-iconsvg';
 import styled from 'styled-components';
 import {TIconCode} from './types';
 

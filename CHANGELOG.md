@@ -18,7 +18,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* remove bear-react-grid, if need custom ([4c230c6](https://github.com/imagine10255/bear-react-iconsvg/commit/4c230c6c3a057338209c1bddf9d34ccc3210a4cd))
+* remove @acrool/react-grid, if need custom ([4c230c6](https://github.com/imagine10255/bear-react-iconsvg/commit/4c230c6c3a057338209c1bddf9d34ccc3210a4cd))
 
 ### [3.0.1](https://github.com/imagine10255/bear-react-iconsvg/compare/v3.0.0...v3.0.1) (2023-04-04)
 

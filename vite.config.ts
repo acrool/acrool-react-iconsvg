@@ -15,23 +15,16 @@ export default defineConfig({
         }),
         visualizer() as Plugin,
     ],
-    resolve: {
-        alias: {
-            'components': path.resolve(__dirname, 'src/components'),
-            'media': path.resolve(__dirname, 'src/media'),
-            'config': path.resolve(__dirname, 'src/config'),
-        }
-    },
     build: {
         sourcemap: process.env.NODE_ENV !== 'production',
         lib: {
             entry: path.resolve(__dirname, 'src/index.ts'),
             formats: ['es'],
-            fileName: (format) => `bear-react-iconsvg.${format}.js`,
+            fileName: (format) => `acrool-react-iconsvg.${format}.js`,
         },
         cssTarget: 'chrome61',
         rollupOptions: {
-            external: ['react', 'react-dom', 'styled-components', 'bear-react-grid'],
+            external: ['react', 'react-dom', 'styled-components'],
             output: {
                 globals: {
                     react: 'React',

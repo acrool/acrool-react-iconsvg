@@ -1,4 +1,4 @@
-# Bear React IconSvg
+# Acrool React IconSvg
 
 <p align="center">
    This is the element using svg symbol as icon in React
@@ -16,12 +16,12 @@
 ## Install
 
 ```bash
-yarn add bear-react-iconsvg
+yarn add @acrool/react-iconsvg
 ```
 
 ## Usage
 
-> you need bear-react-iconsvg, use rwd size setting,
+> you need `@acrool/react-iconsvg`, use rwd size setting,
 add custom icon component in your project, copy [IconComponent](./example/src/Icon.tsx) files.
 
 ```tsx
@@ -38,9 +38,9 @@ There is also a codesandbox template that you can fork and play with it:
 
 
 ## Tools
-[bear-icon-symbols](https://github.com/imagine10255/bear-icon-symbols) - svgs build icon-symbols
+[acrool-icon-symbols](https://github.com/acrool/acrool-icon-symbols) - svgs build icon-symbols
 
 
 ## License
 
-MIT © [imagine10255](https://github.com/imagine10255)
+MIT © [imagine10255](https://github.com/acrool)
