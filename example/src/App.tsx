@@ -1,9 +1,10 @@
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import Icon, {SvgSymbol} from './bear-react-icon';
+import {SvgSymbol} from './library/acrool-react-icon';
 
 import './App.css';
 import './bootstrap-base.min.css';
+import {GridThemeProvider} from '@acrool/react-grid';
+import Example from './views/Example';
+import Github from './assets/github.svg?react';
 
 
 
@@ -11,38 +12,27 @@ function App() {
 
 
     return (
-        <>
-
+        <GridThemeProvider>
             <div className="App">
-                <div>
-                    <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-                        <img src={viteLogo} className="logo" alt="Vite logo"/>
-                    </a>
-                    <a href="https://reactjs.org" target="_blank" rel="noreferrer">
-                        <img src={reactLogo} className="logo react" alt="React logo"/>
-                    </a>
-                </div>
-                <h1>Vite + React</h1>
-                <div className="card">
-                    <Icon code="play" color="#fff" size={30}/>
-                    <Icon code="desktop" color="green" size={30}/>
-                    <Icon code="ad" color="primary" size={30}/>
-                    <Icon code="angle_down" color="secondary" size={40}/>
+                <a href="https://github.com/acrool/acrool-react-iconsvg" target="_blank" rel="noopener noreferrer">
+                    <Github width={40} height={40}/>
+                </a>
 
-
-                    <p>
-                        Edit <code>src/App.tsx</code> and save to test HMR
-                    </p>
+                <div style={{textAlign: 'center', border: '1px solid #606060', display: 'flex', flexDirection: 'column', padding: '20px', margin: '20px 0'}}>
+                    <img src="/logo.svg" style={{height: '100px'}} alt="Acrool React Locale"/>
+                    <div style={{fontSize: '40px', color: '#fff', fontWeight: 700}}>Acrool React IconSvg</div>
                 </div>
-                <p className="read-the-docs">
-                    Click on the Vite and React logos to learn more
-                </p>
+
+                <Example/>
 
             </div>
 
+
             <SvgSymbol/>
-        </>
+        </GridThemeProvider>
     );
 }
 
 export default App;
+
+

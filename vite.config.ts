@@ -15,6 +15,14 @@ export default defineConfig({
         }),
         visualizer() as Plugin,
     ],
+    css: {
+        devSourcemap: process.env.NODE_ENV === 'production',
+        modules: {
+            localsConvention: 'camelCase',
+            scopeBehaviour: 'local',
+            generateScopedName: 'acrool-react-iconsvg__[local]',
+        }
+    },
     build: {
         sourcemap: process.env.NODE_ENV !== 'production',
         lib: {
@@ -24,7 +32,7 @@ export default defineConfig({
         },
         cssTarget: 'chrome61',
         rollupOptions: {
-            external: ['react', 'react-dom', 'styled-components'],
+            external: ['react', 'react-dom'],
             output: {
                 globals: {
                     react: 'React',

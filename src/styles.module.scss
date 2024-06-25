@@ -1,0 +1,40 @@
+.root{
+  @keyframes rotate-animation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  vertical-align: middle;
+  fill: currentColor;
+
+  width: var(--icon-size);
+  height: var(--icon-size);
+
+  color: var(--icon-color);
+
+  &[data-active-color]{
+    color: var(--icon-active-color, var(--icon-color));
+  }
+
+  &:hover{
+    color: var(--icon-hover-color, var(--icon-active-color, var(--icon-color)));
+  }
+
+
+  transform: rotate(var(--icon-rotate));
+
+  &[data-rotate-animation]{
+    animation: rotate-animation 1s linear infinite;
+  }
+
+}

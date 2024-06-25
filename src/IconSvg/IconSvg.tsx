@@ -1,7 +1,8 @@
-import React from 'react';
-import styled, {css, keyframes} from 'styled-components';
-import {generateColor, unit} from './utils';
-import {IIconSetting, IIconSvgProps, IIconSvgRoot} from './types';
+import React, {CSSProperties} from 'react';
+import {unit} from './utils';
+import {IIconSetting, IIconSvgProps} from './types';
+import {clsx} from 'clsx';
+import styles from '../styles.module.scss';
 
 
 export interface ISvgProps extends IIconSvgProps, IIconSetting {}
@@ -29,54 +30,23 @@ const IconSvg = ({
 }: ISvgProps) => {
     const iconCode = [idPrefix, code].join('');
 
-    return <IconSvgRoot
+    return <svg
         xmlns="http://www.w3.org/2000/svg"
-        style={style}
-        className={className}
-        isRotateAnimation={isRotateAnimation}
+        style={{
+            ...style,
+            '--icon-rotate': rotate ? `${rotate}deg`: undefined,
+            '--icon-hover-color': hoverColor,
+            '--icon-active-color': activeColor,
+            '--icon-color': color,
+            '--icon-size': unit(size),
+        } as CSSProperties}
+        className={clsx(styles.root, className)}
+        data-rotate-animation={isRotateAnimation ? '' : undefined}
+        data-active={isActive ? '': undefined}
         onClick={onClick}
-        rotate={rotate}
-        color={color}
-        hoverColor={hoverColor}
-        activeColor={activeColor}
-        isActive={isActive}
-        size={unit(size)}
     >
         <use xlinkHref={`${symbolsPath}#${iconCode}`}/>
-    </IconSvgRoot>;
+    </svg>;
 };
 
 export default IconSvg;
-
-const rotateAnimine = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-`;
-
-const IconSvgRoot = styled.svg<IIconSvgRoot>`
-  --svg-size: ${props => props.size};
-  
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  width: var(--svg-size);
-  height: var(--svg-size);
-
-
-  vertical-align: middle;
-  fill: currentColor;
-
-  transform: rotate(${props => props.rotate}deg);
-
-  ${props =>  props.isRotateAnimation && css`
-    animation: ${rotateAnimine} 1s linear infinite;
-  `}
-  ${(props: IIconSvgRoot) => generateColor(props)}
-`;
