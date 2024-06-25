@@ -1,7 +1,7 @@
 # Acrool React IconSvg
 
 <a href="https://acrool-react-iconsvg.pages.dev/" title="Acrool React IconSvg - IconSymbols Of React Component Design">
-    <img src="https://acrool-react-iconsvg.pages.dev/img/og.webp" alt="Acrool React Table Logo" />
+    <img src="https://acrool-react-iconsvg.pages.dev/og.webp" alt="Acrool React Iconsvg Logo" />
 </a>
 
 <p align="center">
