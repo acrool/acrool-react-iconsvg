@@ -42,10 +42,15 @@ import '@acrool/react-iconsvg/dist/index.css';
 add custom icon component in your project, copy [IconComponent](./example/src/library/acrool-react-icon/Icon.tsx) files.
 
 ```tsx
-<Icon code="apple" color="#000" size={30}/>
-<Icon code="android" color="green" size={30}/>
-<Icon code="arrow-alt-right" color="primary" size={30}/>
-<Icon code="arrow-right" color="secondary" size={30}/>
+<Icon code="play" color="#fff" size={100}/>
+<Icon code="desktop" color="green" size={100}/>
+<Icon code="ad" color="var(--primary-color)" size={100}/>
+<Icon code={EIconCode.arrow_right} color="secondary" rotate={90} size={100}/>
+<Icon code={EIconCode.ad} size={100} hoverColor="red"/>
+<Icon code={EIconCode.upload} size={100} activeColor="blud" isActive/>
+<Icon code={EIconCode.redo} size={100} isRotateAnimation/>
+<Icon code={EIconCode.help} size={100} onClick={() => window.alert('click!')}/>
+
 ```
 
 
