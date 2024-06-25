@@ -11,20 +11,31 @@ import Github from './assets/github.svg?react';
 function App() {
 
 
+
+    const renderHeader = () => {
+
+        const repositoryUrl = 'https://github.com/acrool/acrool-react-iconsvg';
+        const name = 'Acrool React IconSvg';
+
+        return <>
+            <a href={repositoryUrl} target="_blank" rel="noopener noreferrer">
+                <Github width={40} height={40}/>
+            </a>
+
+            <div className="banner-wrapper">
+                <img src="/logo.svg" alt={name}/>
+                <h1>{name}</h1>
+            </div>
+        </>;
+    };
+
+
     return (
         <GridThemeProvider>
             <div className="App">
-                <a href="https://github.com/acrool/acrool-react-iconsvg" target="_blank" rel="noopener noreferrer">
-                    <Github width={40} height={40}/>
-                </a>
-
-                <div style={{textAlign: 'center', border: '1px solid #606060', display: 'flex', flexDirection: 'column', padding: '20px', margin: '20px 0'}}>
-                    <img src="/logo.svg" style={{height: '100px'}} alt="Acrool React Locale"/>
-                    <div style={{fontSize: '40px', color: '#fff', fontWeight: 700}}>Acrool React IconSvg</div>
-                </div>
+                {renderHeader()}
 
                 <Example/>
-
             </div>
 
 
