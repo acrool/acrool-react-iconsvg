@@ -10,8 +10,6 @@
 
 
 
-
-
 <div align="center">
 
 [![NPM](https://img.shields.io/npm/v/@acrool/react-iconsvg.svg?style=for-the-badge)](https://www.npmjs.com/package/@acrool/react-iconsvg)
@@ -21,8 +19,16 @@
 [![npm downloads](https://img.shields.io/npm/dm/@acrool/react-iconsvg.svg?style=for-the-badge)](https://www.npmjs.com/package/@acrool/react-iconsvg)
 [![npm](https://img.shields.io/npm/dt/@acrool/react-iconsvg.svg?style=for-the-badge)](https://www.npmjs.com/package/@acrool/react-iconsvg)
 
-
 </div>
+
+
+## Features
+
+- Through the React component method, you can easily use the icon and change the size and color by specifying the Icon code.
+- Use Icon Symbols to support multi-color Icon
+- Support Nextjs 14+
+
+
 
 ## Install
 
@@ -50,12 +56,21 @@ add custom icon component in your project, copy [IconComponent](./example/src/li
 <Icon code={EIconCode.upload} size={100} activeColor="blud" isActive/>
 <Icon code={EIconCode.redo} size={100} isRotateAnimation/>
 <Icon code={EIconCode.help} size={100} onClick={() => window.alert('click!')}/>
-
 ```
+
+
 
 
 ## Tools
 [acrool-icon-symbols](https://github.com/acrool/acrool-icon-symbols) - svgs build icon-symbols
+
+## Online Manager
+[acrool](https://acrool.com) - Project management system, providing icon management tools
+
+
+There is also a example that you can play with it:
+
+[![Play react-editext-example](https://raw.githubusercontent.com/acrool/acrool-react-iconsvg/main/play-in-example-button.svg)](https://acrool-react-iconsvg.pages.dev)
 
 
 ## License
