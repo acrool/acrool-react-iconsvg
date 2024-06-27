@@ -12,11 +12,13 @@
   },
   "dependencies": {
     "@types/styled-components": "^5.1.26",
+    "@types/dom-to-image": "^2.6.7",
     "@acrool/react-iconsvg": "link:..",
     "@acrool/react-grid": "5.0.14-alpha.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^5.3.9"
+    "styled-components": "^5.3.9",
+    "dom-to-image": "^2.6.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

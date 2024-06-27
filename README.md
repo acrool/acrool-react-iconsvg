@@ -1,7 +1,7 @@
 # Acrool React IconSvg
 
 <a href="https://acrool-react-iconsvg.pages.dev/" title="Acrool React IconSvg - IconSymbols Of React Component Design">
-    <img src="https://acrool-react-iconsvg.pages.dev/og.webp" alt="Acrool React Iconsvg Logo" />
+    <img src="https://raw.githubusercontent.com/acrool/acrool-react-iconsvg/main/example/public/og.webp" alt="Acrool React IconSvg Logo"/>
 </a>
 
 <p align="center">
@@ -71,6 +71,13 @@ add custom icon component in your project, copy [IconComponent](./example/src/li
 There is also a example that you can play with it:
 
 [![Play react-editext-example](https://raw.githubusercontent.com/acrool/acrool-react-iconsvg/main/play-in-example-button.svg)](https://acrool-react-iconsvg.pages.dev)
+
+
+
+There is also a example that you can play with it:
+
+[![Play react-editext-example](https://raw.githubusercontent.com/acrool/acrool-react-locale/main/play-in-example-button.svg)](https://acrool-react-locale.pages.dev)
+
 
 
 ## License
