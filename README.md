@@ -106,13 +106,6 @@ There is also a example that you can play with it:
 [![Play react-editext-example](https://raw.githubusercontent.com/acrool/acrool-react-iconsvg/main/play-in-example-button.svg)](https://acrool-react-iconsvg.pages.dev)
 
 
-
-There is also a example that you can play with it:
-
-[![Play react-editext-example](https://raw.githubusercontent.com/acrool/acrool-react-locale/main/play-in-example-button.svg)](https://acrool-react-locale.pages.dev)
-
-
-
 ## License
 
 MIT © [Acrool](https://github.com/acrool) & [Imagine](https://github.com/imagine10255)
