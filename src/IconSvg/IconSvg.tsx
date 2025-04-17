@@ -19,7 +19,7 @@ const IconSvg = ({
     style,
     className,
     onClick,
-    color = '#bdbdbd',
+    color,
     hoverColor,
     activeColor,
     isActive,

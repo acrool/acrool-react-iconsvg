@@ -23,11 +23,11 @@
   color: var(--icon-color);
 
   &[data-active-color]{
-    color: var(--icon-active-color, var(--icon-color));
+    color: var(--icon-active-color);
   }
 
   &:hover{
-    color: var(--icon-hover-color, var(--icon-active-color, var(--icon-color)));
+    color: var(--icon-hover-color, var(--icon-active-color));
   }
 
 

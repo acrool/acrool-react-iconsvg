@@ -32,9 +32,9 @@ export default Icon;
 const ThemeIconSvg = styled(IconSvg)`
   
   ${props => props.color === 'primary' && css`
-      --iconsvg-color: var(--primary-color) !important;
+      --icon-color: var(--primary-color) !important;
   `}
   ${props => props.color === 'secondary' && css`
-    --iconsvg-color: var(--secondary-color) !important;
+    --icon-color: var(--secondary-color) !important;
   `}
 `;
