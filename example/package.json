@@ -11,21 +11,20 @@
     "pages:deploy": "NODE_VERSION=18 yarn build && wrangler pages deploy ./dist"
   },
   "resolutions": {
-    "styled-components": "5.3.9"
+    "styled-components": "6.1.17"
   },
   "dependencies": {
-    "@types/styled-components": "^5.1.26",
     "@types/dom-to-image": "^2.6.7",
     "@acrool/react-iconsvg": "link:..",
-    "@acrool/react-grid": "5.2.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "styled-components": "^5.3.9",
+    "@acrool/react-grid": "6.0.2",
+    "react": "link:../node_modules/react",
+    "react-dom": "link:../node_modules/react-dom",
+    "styled-components": "^6.1.17",
     "dom-to-image": "^2.6.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react-swc": "^3.0.0",
     "typescript": "^4.9.3",
     "vite": "^4.2.0",
