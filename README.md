@@ -22,6 +22,9 @@
 </div>
 
 
+`^4.1.4 support react >=18.0.0 <20.0.0`
+
+
 ## Features
 
 - Through the React component method, you can easily use the icon and change the size and color by specifying the Icon code.
