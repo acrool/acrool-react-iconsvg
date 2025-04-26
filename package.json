@@ -19,6 +19,7 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "browser": "./dist/acrool-react-iconsvg.es.js",
       "import": "./dist/acrool-react-iconsvg.es.js"
     },
