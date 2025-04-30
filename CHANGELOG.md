@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.1.6-alpha.1](https://github.com/acrool/acrool-react-iconsvg/compare/v4.1.6-alpha.0...v4.1.6-alpha.1) (2025-04-30)
+
 ### [4.1.6-alpha.0](https://github.com/acrool/acrool-react-iconsvg/compare/v4.1.5...v4.1.6-alpha.0) (2025-04-30)
 
 ### [4.1.5](https://github.com/acrool/acrool-react-iconsvg/compare/v4.1.5-alpha.0...v4.1.5) (2025-04-26)
