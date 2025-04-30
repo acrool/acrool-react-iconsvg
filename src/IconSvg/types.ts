@@ -1,7 +1,7 @@
 import CSS from 'csstype';
 
-type sizeUnit = 'px'|'%'|'em';
-type TUnitSize = `${number}${sizeUnit}`;
+export type TSizeUnit = 'px'|'%'|'em'|'rem'|'vw'|'vh';
+type TUnitSize = `${number}${TSizeUnit}`;
 
 export type TSize = number|TUnitSize|'inherit';
 
@@ -21,6 +21,7 @@ export interface IIconSvgRoot extends IIconColor {
     isRotateAnimation?: boolean;
     rotate?: number;
     size?: TSize;
+    unit?: TSizeUnit;
 }
 
 export type TIconCode = unknown;

@@ -1,5 +1,5 @@
 import React, {CSSProperties} from 'react';
-import {unit} from './utils';
+import {ignoreUnit} from './utils';
 import {IIconSetting, IIconSvgProps} from './types';
 import {clsx} from 'clsx';
 import styles from '../styles.module.scss';
@@ -27,6 +27,7 @@ const IconSvg = ({
     isRotateAnimation = false,
     rotate = 0,
     size = 28,
+    unit = 'px',
 }: ISvgProps) => {
     const iconCode = [idPrefix, code].join('');
 
@@ -38,7 +39,7 @@ const IconSvg = ({
             '--icon-hover-color': hoverColor,
             '--icon-active-color': activeColor,
             '--icon-color': color,
-            '--icon-size': unit(size),
+            '--icon-size': ignoreUnit(size, unit),
         } as CSSProperties}
         className={clsx(styles.root, className)}
         data-rotate-animation={isRotateAnimation ? '' : undefined}

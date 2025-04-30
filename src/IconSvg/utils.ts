@@ -1,10 +1,15 @@
-import {TSize} from './types';
+import {TSize, TSizeUnit} from './types';
 
 
-export const unit = (size?: TSize): TSize|undefined => {
+/**
+ * 省略單位
+ * @param size
+ * @param defaultUnit
+ */
+export const ignoreUnit = (size?: TSize, defaultUnit: TSizeUnit = 'px'): TSize|undefined => {
     if(!size){
         return undefined;
     }
-    return typeof size === 'number'? `${size}px`: size;
+    return typeof size === 'number'? `${size}${defaultUnit}`: size;
 };
 
