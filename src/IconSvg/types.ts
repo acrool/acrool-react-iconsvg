@@ -21,7 +21,7 @@ export interface IIconSvgRoot extends IIconColor {
     isRotateAnimation?: boolean;
     rotate?: number;
     size?: TSize;
-    unit?: TSizeUnit;
+    defaultUnit?: TSizeUnit;
 }
 
 export type TIconCode = unknown;

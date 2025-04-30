@@ -27,7 +27,7 @@ const IconSvg = ({
     isRotateAnimation = false,
     rotate = 0,
     size = 28,
-    unit = 'px',
+    defaultUnit = 'px',
 }: ISvgProps) => {
     const iconCode = [idPrefix, code].join('');
 
@@ -39,7 +39,7 @@ const IconSvg = ({
             '--icon-hover-color': hoverColor,
             '--icon-active-color': activeColor,
             '--icon-color': color,
-            '--icon-size': ignoreUnit(size, unit),
+            '--icon-size': ignoreUnit(size, defaultUnit),
         } as CSSProperties}
         className={clsx(styles.root, className)}
         data-rotate-animation={isRotateAnimation ? '' : undefined}
