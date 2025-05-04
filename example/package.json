@@ -16,7 +16,7 @@
   "dependencies": {
     "@types/dom-to-image": "^2.6.7",
     "@acrool/react-iconsvg": "link:..",
-    "@acrool/react-grid": "6.0.2",
+    "@acrool/react-grid": "6.0.4",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "styled-components": "^6.1.17",

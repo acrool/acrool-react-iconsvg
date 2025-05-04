@@ -1,2 +1,3 @@
 export {default} from './IconSvg';
-export type {IIconSvgProps} from './types';
+export {ignoreUnit} from './utils';
+export type {IIconSvgProps, TSize} from './types';

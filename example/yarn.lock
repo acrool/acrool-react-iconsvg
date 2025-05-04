@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@acrool/react-grid@6.0.2":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@acrool/react-grid/-/react-grid-6.0.2.tgz#4a976dcdc0bf8c1323ba472ed051f9e637cbfb16"
-  integrity sha512-vA7jbwM9MHpmdLnf9zDIccUpJ09scsRpmbidOMFzu7TwE64/iRCii6MCdhjg258oXl3B4wYN+Kt6ODagKZMr6A==
+"@acrool/react-grid@6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@acrool/react-grid/-/react-grid-6.0.4.tgz#9fd98f0f2ae801d4841a0f39b5be627b3a42c4d7"
+  integrity sha512-PeU3vEBka+EelsIxSNH0S1cmtewEYyt54gcENO5xs74GwOfYNEBk/Mg8ns+Cj3tAGQ2FJqXtMSZQNHhgCP5KRA==
 
 "@acrool/react-iconsvg@link:..":
   version "0.0.0"

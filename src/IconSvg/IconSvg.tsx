@@ -38,7 +38,7 @@ const IconSvg = ({
             '--icon-rotate': rotate ? `${rotate}deg`: undefined,
             '--icon-hover-color': hoverColor,
             '--icon-active-color': activeColor,
-            '--icon-color': color,
+            '--props-icon-color': color,
             '--icon-size': ignoreUnit(size, defaultUnit),
         } as CSSProperties}
         className={clsx(styles.root, className)}

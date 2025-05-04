@@ -9,6 +9,8 @@
     }
   }
 
+  --icon-color: var(--props-icon-color);
+
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -19,15 +21,17 @@
 
   width: var(--icon-size);
   height: var(--icon-size);
+  flex: 0 0 auto;
+
 
   color: var(--icon-color);
 
   &[data-active-color]{
-    --icon-color: var(--icon-active-color);
+    --icon-color: var(--icon-active-color, var(--props-icon-color));
   }
 
   &:hover{
-    --icon-color: var(--icon-hover-color, var(--icon-active-color));
+    --icon-color: var(--icon-hover-color, var(--props-icon-color));
   }
 
 
