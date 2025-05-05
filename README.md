@@ -52,8 +52,7 @@ import '@acrool/react-iconsvg/dist/index.css';
 
 ***step3.*** add Svg Symbols file `src/library/acrool-react-icon`
 
-
-in your App.tsx
+***step4.*** in your App.tsx
 
 ```tsx
 import {SvgSymbol} from '@/library/acrool-react-icon';
@@ -66,6 +65,9 @@ const App = () => {
     </div>;
 }
 ```
+
+***step5.*** add in your eslint ignore
+
 
 ## Use Sample
 

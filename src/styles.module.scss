@@ -1,16 +1,14 @@
-.root{
-  @keyframes rotate-animation {
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(360deg);
-    }
+@keyframes iconsvg-rotate-animation {
+  from {
+    transform: rotate(0deg);
   }
 
-  --icon-color: var(--props-icon-color);
+  to {
+    transform: rotate(360deg);
+  }
+}
 
+.root{
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -26,7 +24,7 @@
   transform: rotate(var(--icon-rotate));
 
   &[data-rotate-animation]{
-    animation: rotate-animation 1s linear infinite;
+    animation: iconsvg-rotate-animation 1s linear infinite;
   }
 
 }

@@ -1,8 +1,9 @@
-import React, {CSSProperties} from 'react';
-import {ignoreUnit} from './utils';
-import {IIconSetting, IIconSvgProps} from './types';
 import {clsx} from 'clsx';
+import React, {CSSProperties} from 'react';
+
 import styles from '../styles.module.scss';
+import {IIconSetting, IIconSvgProps} from './types';
+import {ignoreUnit} from './utils';
 
 
 export interface ISvgProps extends IIconSvgProps, IIconSetting {}
