@@ -72,6 +72,8 @@ const App = () => {
 ## Use Sample
 
 ```tsx
+import {Icon} from '@/library/acrool-react-icon';
+
 <Icon code="play" color="#fff" size={100}/>
 <Icon code="desktop" color="green" size={100}/>
 <Icon code="ad" color="var(--primary-color)" size={100}/>
@@ -86,11 +88,11 @@ const App = () => {
 
 
 ## Tools
-[Acrool Icon Symbols](https://github.com/acrool/acrool-icon-symbols) - svgs build icon-symbols
-[Acrool Icon Symbols Cli](https://github.com/acrool/acrool-icon-symbols-cli) - svgs build icon-symbols
+- [Acrool Icon Symbols](https://github.com/acrool/acrool-icon-symbols) - svgs build icon-symbols
+- [Acrool Icon Symbols Cli](https://github.com/acrool/acrool-icon-symbols-cli) - svgs build icon-symbols
 
 ## Online Manager
-[acrool](https://docs.acrool.com/icon/manage-icon-symbol) - Project management system, providing icon management tools
+- [acrool](https://docs.acrool.com/icon/manage-icon-symbol) - Project management system, providing icon management tools
 
 
 There is also a example that you can play with it:

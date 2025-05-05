@@ -22,7 +22,7 @@
 
 
 
-  transform: rotate(var(--icon-rotate));
+  transform: rotate(var(--icon-rotate, 0));
 
   &[data-rotate-animation]{
     animation: acrool-react-iconsvg-rotate-animation 1s linear infinite;
