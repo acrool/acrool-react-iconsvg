@@ -20,9 +20,6 @@ const IconSvg = ({
     className,
     onClick,
     color,
-    hoverColor,
-    activeColor,
-    isActive,
     code,
     isRotateAnimation = false,
     rotate = 0,
@@ -36,14 +33,13 @@ const IconSvg = ({
         style={{
             ...style,
             '--icon-rotate': rotate ? `${rotate}deg`: undefined,
-            '--icon-hover-color': hoverColor,
-            '--icon-active-color': activeColor,
-            '--props-icon-color': color,
-            '--icon-size': ignoreUnit(size, defaultUnit),
         } as CSSProperties}
+        color={color}
+        width="auto"
+        height={ignoreUnit(size, defaultUnit)}
+        rotate={rotate ? `${rotate}deg`: undefined}
         className={clsx(styles.root, className)}
         data-rotate-animation={isRotateAnimation ? '' : undefined}
-        data-active={isActive ? '': undefined}
         onClick={onClick}
     >
         <use xlinkHref={`${symbolsPath}#${iconCode}`}/>

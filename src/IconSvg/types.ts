@@ -6,21 +6,16 @@ type TUnitSize = `${number}${TSizeUnit}`;
 export type TSize = number|TUnitSize|'inherit';
 
 
-type TColor = string|'inherit'|'primary'|'secondary'|'contrast'|'danger'|'disabled';
-export interface IIconColor {
-    color?: TColor,
-    activeColor?: TColor,
-    hoverColor?: TColor,
-    isActive?: boolean,
-}
+type TColor = string;
 
-export interface IIconSvgRoot extends IIconColor {
+export interface IIconSvgRoot {
     className?: string,
     style?: CSS.Properties,
     onClick?: (event: React.MouseEvent<Element>) => void;
     isRotateAnimation?: boolean;
     rotate?: number;
     size?: TSize;
+    color?: TColor,
     defaultUnit?: TSizeUnit;
 }
 

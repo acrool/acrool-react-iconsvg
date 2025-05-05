@@ -1,19 +1,34 @@
 import React from 'react';
 import IconSvg, {IIconSvgProps, ignoreUnit} from '@acrool/react-iconsvg';
 import styled, {css} from 'styled-components';
-import {TIconCode} from './types';
+import {TIconCode} from './SvgSymbol';
 import {media} from '@acrool/react-grid';
 
 
 const idPrefix = 'icon_';
 // const path = asset(`/plugins/iconsvg/index.svg?v=${getAppVersion()}`);
 
+interface IStyledProps {
+    $sm?: IIconSvgProps['size']
+    $md?: IIconSvgProps['size']
+    $lg?: IIconSvgProps['size']
+    $xl?: IIconSvgProps['size']
+    $xxl?: IIconSvgProps['size'],
+    $color?: string,
+    $hoverColor?: string,
+    $activeColor?: string,
+    $isActive?: boolean,
+}
+
 interface IGridBreakpoints {
     sm?: IIconSvgProps['size']
     md?: IIconSvgProps['size']
     lg?: IIconSvgProps['size']
     xl?: IIconSvgProps['size']
-    xxl?: IIconSvgProps['size']
+    xxl?: IIconSvgProps['size'],
+    hoverColor?: string,
+    activeColor?: string,
+    isActive?: boolean,
 }
 
 interface IProps extends IIconSvgProps, IGridBreakpoints {
@@ -25,10 +40,22 @@ interface IProps extends IIconSvgProps, IGridBreakpoints {
  * https://github.com/imagine10255/bear-react-iconsvg
  */
 const Icon = (props: IProps) => {
+    const {color, hoverColor, activeColor, sm, md, lg, xl, xxl, isActive,...baseProps} = props;
     return <ThemeIconSvg
-        {...props}
+        {...baseProps}
         idPrefix={idPrefix}
         symbolsPath=""
+
+        $color={color}
+        $hoverColor={hoverColor}
+        $activeColor={activeColor}
+        $isActive={isActive}
+
+        $sm={sm}
+        $md={md}
+        $lg={lg}
+        $xl={xl}
+        $xxl={xxl}
     />;
 };
 
@@ -36,40 +63,48 @@ export default Icon;
 
 
 
-const ThemeIconSvg = styled(IconSvg)<IGridBreakpoints>`
+const ThemeIconSvg = styled(IconSvg)<IStyledProps>`
+  color: ${props => props.$color};
   
-  ${props => props.color === 'primary' && css`
-      --icon-color: var(--primary-color) !important;
+  ${props => props.$color === 'primary' && css`
+      color: var(--primary-color);
   `}
-  ${props => props.color === 'secondary' && css`
-      --icon-color: var(--secondary-color) !important;
+  ${props => props.$color === 'secondary' && css`
+      color: var(--secondary-color);
   `}
+  ${props => props.$isActive && props.$activeColor && css`
+      color: ${props.$activeColor};
+  `}
+  ${props => props.$hoverColor && css`
+      &:hover {
+        color: ${props.$hoverColor};
+      }
+  `}
+  
 
-
-
-  ${props => props.sm && css`
+  ${props => props.$sm && css`
       ${media.sm`
-          --icon-size: ${ignoreUnit(props.sm)} !important;
+          height: ${ignoreUnit(props.$sm)};
         `}
   `}
-  ${props => props.md && css`
+  ${props => props.$md && css`
       ${media.md`
-            --icon-size: ${ignoreUnit(props.md)} !important;
+            height: ${ignoreUnit(props.$md)};
         `}
   `}
-  ${props => props.lg && css`
+  ${props => props.$lg && css`
       ${media.lg`
-            --icon-size: ${ignoreUnit(props.lg)} !important;
+            height: ${ignoreUnit(props.$lg)};
         `}
   `}
-  ${props => props.xl && css`
+  ${props => props.$xl && css`
       ${media.xl`
-            --icon-size: ${ignoreUnit(props.xl)} !important;
+            height: ${ignoreUnit(props.$xl)};
         `}
   `}
-  ${props => props.xxl && css`
+  ${props => props.$xxl && css`
       ${media.xxl`
-            --icon-size: ${ignoreUnit(props.xxl)} !important;
+            height: ${ignoreUnit(props.$xxl)};
         `}
   `}
 `;

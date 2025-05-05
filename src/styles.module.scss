@@ -18,21 +18,9 @@
 
   vertical-align: middle;
   fill: currentColor;
-
-  width: var(--icon-size);
-  height: var(--icon-size);
   flex: 0 0 auto;
+  aspect-ratio: 1;
 
-
-  color: var(--icon-color);
-
-  &[data-active-color]{
-    --icon-color: var(--icon-active-color, var(--props-icon-color));
-  }
-
-  &:hover{
-    --icon-color: var(--icon-hover-color, var(--props-icon-color));
-  }
 
 
   transform: rotate(var(--icon-rotate));
