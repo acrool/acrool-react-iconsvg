@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@acrool/js-utils": "^3.2.15",
-    "@acrool/react-grid": "^6.0.4",
+    "@acrool/react-grid": "^6.0.5",
     "@acrool/react-iconsvg": "link:..",
     "@chromatic-com/storybook": "^1.5.0",
     "@emotion/is-prop-valid": "^1.2.2",
