@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.3.0-alpha.1](https://github.com/acrool/acrool-react-iconsvg/compare/v4.3.0-alpha.0...v4.3.0-alpha.1) (2026-02-20)
+
+
+### Bug Fixes
+
+* 移除樣式寬度設定 ([b93c03a](https://github.com/acrool/acrool-react-iconsvg/commit/b93c03ac41e3fea7ee648e24ecf934d1b6753898))
+
 ## [4.3.0-alpha.0](https://github.com/acrool/acrool-react-iconsvg/compare/v4.2.1...v4.3.0-alpha.0) (2026-02-20)
 
 
