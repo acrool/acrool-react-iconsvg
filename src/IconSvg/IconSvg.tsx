@@ -40,6 +40,7 @@ const IconSvg = ({
             '--icon-rotate': rotate ? `${rotate}deg`: undefined,
         } as CSSProperties}
         color={color}
+        width={ignoreUnit(size, defaultUnit)}
         height={ignoreUnit(size, defaultUnit)}
         rotate={rotate ? `${rotate}deg`: undefined}
         className={clsx(styles.root, className)}
