@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.3.0-alpha.0](https://github.com/acrool/acrool-react-iconsvg/compare/v4.2.1...v4.3.0-alpha.0) (2026-02-20)
+
+
+### Features
+
+* 新增 Yarn 配置與更新 .gitignore ([dd165b5](https://github.com/acrool/acrool-react-iconsvg/commit/dd165b5ed5cecb32ba79646015745dd0ff0dd10c))
+
 ### [4.2.1](https://github.com/acrool/acrool-react-iconsvg/compare/v4.2.0...v4.2.1) (2025-05-05)
 
 ## [4.2.0](https://github.com/acrool/acrool-react-iconsvg/compare/v4.1.6-alpha.2...v4.2.0) (2025-05-05)
