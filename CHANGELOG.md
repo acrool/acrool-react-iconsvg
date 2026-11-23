@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.3.1](https://github.com/acrool/acrool-react-iconsvg/compare/v4.3.0...v4.3.1) (2026-11-23)
+
+
+### Bug Fixes
+
+* **build:** externalize react/jsx-runtime ([1ea97c1](https://github.com/acrool/acrool-react-iconsvg/commit/1ea97c1bdb38b9bed21c87e1366412249d236d04))
+
 ## [4.3.0](https://github.com/acrool/acrool-react-iconsvg/compare/v4.3.0-alpha.1...v4.3.0) (2026-02-20)
 
 ## [4.3.0-alpha.1](https://github.com/acrool/acrool-react-iconsvg/compare/v4.3.0-alpha.0...v4.3.0-alpha.1) (2026-02-20)
